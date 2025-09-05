@@ -1,310 +1,80 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  box-sizing: border-box;
+
 }
 body{
-    color: #ffffff;
-    background-color: #407faf;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+  align-content: center;  
 }
-
-nav{
-    margin: 10px 60px 0 80px;
+header{
+  padding: 7px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #0cae78;
 }
-nav ul{
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  list-style-type: none;
-  position:static;
-}
-nav li{
-  height: 50px;
-}
-nav li:first-child{
-  margin-right: auto;
-  font-weight: bold;
-  font-size:medium;
-}
- nav a{
- color: #ffffff;
-  height: 100%;
-  padding: 0 30px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
- }
- nav a.active{
-   font-family: 'Caudex', serif;
-   text-transform: capitalize;
-    font-weight: bold;
-      color: #407faf;
-   font-size: medium;
-    background-color: #ffffff;
-
- }
- nav a.hire-me{
-    font-family: 'Caudex', serif;
-    text-transform: capitalize;
-    font-weight: bold;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
- }
-  nav a.hire-me:hover{
-    background-color: #ffffff;
-    color: #407faf;
-    box-shadow: 1px 2px 2.5px 3px rgb(10, 91, 141);
-    transition: all 0.3s ease-in-out;
-  }
- nav a:hover{
-  background-color:rgb(181, 141, 67) ;
- }
- 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-.hero{
-    margin-top:10px ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px 0 40px;
-     width: 100%;
-     color: #ffffff;
-     background-color: rgb(181, 141, 67);
-}
-.heroLeft{
-    margin-left: 60px;
-    text-transform: capitalize;
-}
-.heroLeft h3{
-    padding:12px;
-    width: 100%;
-    font-size: 2.5rem; 
-animation-name: dance; 
-animation-duration: 4s;
-animation-delay: 0ms;
-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-}
-@keyframes dance{
-    0%{transform: translateY(0);}
-    25%{transform: translateY(-10px);}
-    50%{transform: translateY(0);}
-    75%{transform: translateY(10px);}
-    100%{transform: translateY(0);}
-}
-.heroLeft p{
-    padding:12px;
-    width: 100%;
-    font-size:medium;   
-}
-
-.heroLeft  .work-with-me{
-width: 200px;
-padding: 12px;
-margin: 12px ;
-color:#407faf;
-background-color: transparent;
-cursor: pointer;
-animation-name: play;
-animation-duration: 4s;
-animation-delay: 0ms;
-animation-iteration-count:infinite ;
-animation-timing-function: ease-in-out;
-}
-@keyframes play{
-    0%{border-color: red;}
-    25%{border-color: blueviolet;}
-    50%{border-color: #407faf;}
-    75%{border-color: maroon;}
-    100%{border-color: orange;}
-}
-.heroLeft .work-with-me:hover{
-   border: none;
-   background-color:  #ffffff;
-   color: #000000;
-    box-shadow:1px 2px 2.5px 3px   #407faf; 
-}
-.heroLeft  .start-career{
-width: 200px;
-padding: 12px;
-margin: 12px ;
-color:#ffffff;
-background-color: #259f25;
-cursor: pointer;
-border: none;
-transition: width 0.5s;
-}
-.heroLeft  .start-career:hover{
-   background-color: #407faf;
-   color: #ffffff;
-   transform: scale(1.1);
-}
-.heroRight{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 50%;
-    background-color:transparent;
-    padding: 20px;
-    margin-top: 40px;     
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-.welcome
-{
-    margin: 20px 60px;
-    padding: 20px;
-    font-size: medium;
-    color:  #ffffff;
-    background:linear-gradient(to right,  rgb(181, 141, 67), #259f25);
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 1px 2px 2.5px 3px #407faf;
-    overflow: hidden;
-    position: relative;
-}
-.welcome p {
-    font-size: large;
-    font-weight: bold;
-    line-height: 1.5;
-    animation: slide 20s ease-in-out -0ms infinite;
-}
-@keyframes slide {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-}
-#skills{
-    margin: 20px 60px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-#skills .items{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    background-color: #588cb5;
-    border-radius: 10px;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    cursor: pointer;
-    animation: skew 3s ease-in-out 0ms infinite;
-}
-#skills .items:hover{
-    background-color: #ffffff;
-    color: #407faf;
-    transform: scale(1.1);
-}
-@keyframes skew{
-  0%{
-    transform: translateY(5px);
-  } 
-    25%{
-        transform: translateY(-5px) ;
-    }
-    50%{
-        transform: translateY(5px) ;
-    }
-    75%{
-        transform: translateY(-5px) ;
-    }
-    100%{
-        transform: translateY(5px) ;
-    }
-}
-#services{
-    margin:40px 60px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-#services .view-services-left{
-    background-color: #588cb5;
-   width: 400px;
-   margin-right: 30px;
-   border-radius:10px ;
-   cursor: pointer;
-   border:2px solid #ffffff ;
-}
-#services .view-services-left:hover{
-    transform: scale(1.08);
-}
-#services .view-services-left li{
-    list-style-type: none;
-    text-indent: 5px;
-}
-#services .view-services-left h4{
-    font-size: 1.5em;
-    text-transform: capitalize;
-    line-height: 1.5em;
-    text-indent: 5px;
-}
-#services .view-services-right{
+.container{
   margin: 40px 80px;
-  animation-name: dance; 
-animation-duration: 4s;
-animation-delay: 0ms;
-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
 }
-@keyframes dance{
-    0%{transform: translateY(0);}
-    25%{transform: translateY(-10px);}
-    50%{transform: translateY(0);}
-    75%{transform: translateY(10px);}
-    100%{transform: translateY(0);}
+.card{
+ width: 250px;
+ padding: 12px;
+ margin: 12px;
+ height: fit-content;
+ background-color: #ebe9e9;
+ box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+ border-radius: 12px;
+ cursor: pointer;
+ overflow-y: visible;
+}
+.card:hover{
+transform: scale(1.08);
+}
+.card img{
+  width: 100%;
+  height: fit-content;
+  object-fit: contain;
+}
+.card h3{
+  color: #000000;
+  opacity: 0.5;
+}
+.card p{
+  text-transform: capitalize;
+  color: #000000;
+
+}
+.card button{
+  padding: 10px;
+  width: 95%;
+  color: #ffffff;
+  background-color:#0cae78 ;
+  border: none;
+   border-radius: 12px;
+   cursor: pointer;
+}
+.card button:hover{
+ background-color: #e8b24c;
+ color: #ffffff;
 }
 footer{
-    padding: 20px 60px;
-    display: flex;
-    justify-content: space-around;
-    background-color: #ffffff;
-    color: #407faf;     
+  padding: 7px;
+  background-color: #0cae78;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height:fit-content;
 }
-footer #About{
-    columns: 3;
-    column-gap: 10px;
-    column-rule-style: none;
-}
-footer .comment button{
-    border: none;
-    background-color: #407faf;
-    color: #ffffff;
-    padding: 12px;
-    cursor: pointer;
-}
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-body{
-margin: 0;
-font-size: medium;
-box-sizing: border-box;
-
-}
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
+  
