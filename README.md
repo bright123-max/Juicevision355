@@ -1,7 +1,7 @@
 # Product Cards Page
 
 A simple webpage that displays product cards.  
-This project is for practicing **HTML, CSS, and JavaScript** to create interactive and visually appealing product cards.
+This project is for practicing **HTML, CSS,  to create interactive and visually appealing product cards.
 
 ---
 
