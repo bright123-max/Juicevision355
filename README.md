@@ -12,4 +12,4 @@ This project is for practicing **HTML, CSS,  to create interactive and visually 
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Vision-BA/JuiceVision.git
+   git clone https://github.com/Vision-BA/JuiceVision355.git
